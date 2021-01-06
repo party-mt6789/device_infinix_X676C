@@ -464,6 +464,10 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
     
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.transsion
