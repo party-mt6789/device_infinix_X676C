@@ -69,6 +69,9 @@ vendor.connsys.driver.ready=no
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
 # DRM
 drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l1_support=1
