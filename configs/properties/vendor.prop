@@ -119,6 +119,9 @@ ro.vendor.mtk_agps_app=1
 ro.vendor.mtk_gps_support=1
 ro.vendor.mtk_log_hide_gps=0
 
+# IncrementalFS
+ro.incremental.enable=yes
+
 # Keymaster
 ro.vendor.keymaster_version=5.0
 
