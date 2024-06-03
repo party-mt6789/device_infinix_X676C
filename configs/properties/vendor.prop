@@ -110,6 +110,9 @@ ro.vendor.keymaster_version=5.0
 # Light
 ro.vendor.transsion.backlight_12bit=1
 
+# LMKD
+ro.lmk.kill_heaviest_task=true
+
 # Media
 media.c2.dmabuf.padding=3072
 ro.vendor.jpeg_decode_sw_opt=1
