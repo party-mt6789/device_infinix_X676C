@@ -286,6 +286,7 @@ debug.sf.set_binder_thread_rt=1
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
+debug.sf.enable_egl_image_tracker=0
 ro.config.avoid_gfx_accel=true
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_HDR_display=true
