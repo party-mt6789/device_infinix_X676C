@@ -264,7 +264,8 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor:64 \
     android.hardware.media.c2@1.1.vendor:64 \
     android.hardware.media.c2@1.2.vendor:64 \
-    libcodec2_hidl@1.2.vendor:64 \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor \
     libcodec2_hidl_plugin:64 \
     libcodec2_vndk.vendor:64 \
     libeffects:64 \
@@ -277,11 +278,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libchrome.vendor
-
-PRODUCT_COPY_FILES += \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
-
+    
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
