@@ -277,8 +277,11 @@ PRODUCT_PACKAGES += \
     libflatbuffers-cpp.vendor
 
 PRODUCT_PACKAGES += \
-    libchrome.vendor
+    android.hardware.cas@1.2-service-lazy
     
+PRODUCT_PACKAGES += \
+    libchrome.vendor
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
