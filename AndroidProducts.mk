@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_X6837.mk
+    $(LOCAL_DIR)/derp_X676C.mk

@@ -14,20 +14,20 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_MINI_GAPPS := true
 PRODUCT_NO_CAMERA := false
 
-# Inherit from X6837 device
-$(call inherit-product, device/infinix/X6837/device.mk)
+# Inherit from X676C device
+$(call inherit-product, device/infinix/X676C/device.mk)
 
 BOARD_VENDOR := Infinix
-PRODUCT_NAME := derp_X6837
-PRODUCT_DEVICE := X6837
+PRODUCT_NAME := derp_X676C
+PRODUCT_DEVICE := X676C
 PRODUCT_MANUFACTURER := INFINIX
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := Infinix X6837
+PRODUCT_MODEL := Infinix X676C
 
 PRODUCT_GMS_CLIENTID_BASE := android-transsion
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sys_tssi_64_armv82_infinix-user 13 TP1A.220624.014 526124 release-keys" \
-    PRODUCT_NAME=X6837-OP
+    PRIVATE_BUILD_DESC="vext_x676c_h891-user 12 SP1A.210812.016 657089 release-keys" \
+    PRODUCT_NAME=X676C-OP
 
-BUILD_FINGERPRINT := Infinix/X6837-OP/Infinix-X6837:13/TP1A.220624.014/240313V1154:user/release-keys
+BUILD_FINGERPRINT := Infinix/X676C-OP/Infinix-X676C:12/SP1A.210812.016/240711V1039:user/release-keys
