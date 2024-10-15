@@ -1145,7 +1145,7 @@ vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
 vendor/etc/init/init.wmt_drv.rc
 
-# Display
+# Display - from X6837-H897ABCDEFQRZAaAb-T-BASE-240313V1154
 vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
@@ -1667,8 +1667,6 @@ vendor/lib/mt6789/libvpudv3a_vcodec.so
 vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility_plat.mt6789.so
-vendor/lib/libvcodec_utility_plat.mt6895.so
-vendor/lib/libvcodec_utility_plat.mt6983.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib64/libvpu.so
@@ -1884,7 +1882,6 @@ vendor/etc/init/bootperf.rc
 vendor/etc/init/init.fpsgo.rc
 vendor/lib/libpower_timer.so
 vendor/lib/libperfctl_vendor.so
-vendor/lib/vendor.mediatek.hardware.power@1.1.so
 vendor/lib/vendor.mediatek.hardware.power@2.0.so
 vendor/lib64/libpower_timer.so
 vendor/lib64/libperfctl_vendor.so
@@ -1894,7 +1891,6 @@ vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 # Pnpmgr 
 vendor/etc/init/init.pnpmgr.fpsgo.boost.gki.rc
 vendor/etc/init/init.pnpmgr_game_mode.gki.rc
-vendor/etc/init/init.pnpmgr.fre.gki.rc
 vendor/etc/init/init.pnpmgr_game_record.gki.rc
 vendor/etc/init/init.pnpmgr.gki.rc
 vendor/etc/pnpmgr.db
@@ -2112,9 +2108,6 @@ vendor/lib64/libminizip.so
 vendor/lib64/libtranlog.so
 vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so
 vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
-
-# Transsion Camera - from Irawans ROM 
--system_ext/app/TranssionCamera/TranssionCamera.apk
 
 # USB
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
