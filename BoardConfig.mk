@@ -8,7 +8,7 @@
 include device/transsion/mt6789-common/BoardConfigCommon.mk
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := X6837
+TARGET_BOOTLOADER_BOARD_NAME := X676C
 TARGET_NO_BOOTLOADER := true
 
 # Boot image
@@ -43,7 +43,7 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_dl
 BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/vendor_dlkm/*.ko)
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := X6837,Infinix-X6837,x6837
+TARGET_OTA_ASSERT_DEVICE := X676C,Infinix-X676C,x676C
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
@@ -53,4 +53,4 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # Inherit the proprietary files
-include vendor/infinix/X6837/BoardConfigVendor.mk
+include vendor/infinix/X676C/BoardConfigVendor.mk

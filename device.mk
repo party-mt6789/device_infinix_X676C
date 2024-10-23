@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/infinix/X6837
+DEVICE_PATH := device/infinix/X676C
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # AAPT
@@ -67,4 +67,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, device/transsion/mt6789-common/common.mk)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/infinix/X6837/X6837-vendor.mk)
+$(call inherit-product, vendor/infinix/X676C/X676C-vendor.mk)
