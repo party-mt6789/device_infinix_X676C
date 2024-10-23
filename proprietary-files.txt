@@ -1431,3 +1431,6 @@ vendor/etc/virtual-spn-conf-by-efgid1.xml
 vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
+
+# TranssionCamera - from H0AMSI's ROM (NOTE30)
+-system_ext/app/TranssionCamera/TranssionCamera.apk
