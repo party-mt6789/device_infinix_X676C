@@ -61,7 +61,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.mediatek
+    android.hardware.vibrator-service.transsion
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/transsion/mt6789-common/common.mk)
