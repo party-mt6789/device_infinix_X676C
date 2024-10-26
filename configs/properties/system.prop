@@ -58,6 +58,7 @@ ro.mtk_perf_simple_start_win=1
 vendor.rild.libargs=-d /dev/ttyC0
 vendor.rild.libpath=mtk-ril.so
 ro.vendor.mtk_telephony_add_on_policy=0
+persist.sys.radio.force_lte_ca=true
 
 # Surfaceflinger
 debug.sf.auto_latch_unsignaled=false
