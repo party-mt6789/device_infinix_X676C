@@ -2652,11 +2652,6 @@ vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
 # Transsion Camera - from Irawans ROM 
 -system_ext/app/TranssionCamera/TranssionCamera.apk
 
-# USB
-vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
-vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
-vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
-
 # Vibrator
 vendor/lib/libvibrator.so
 vendor/lib64/libvibrator.so
