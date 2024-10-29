@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2024 IrawansProjekt
+     Copyright (C) 2024 gabutuniverse
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
@@ -335,9 +335,6 @@
      <!-- Should the pinner service pin the Home application? -->
      <bool name="config_pinnerHomeApp">true</bool>
 
-    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
-    <bool name="config_zramWriteback">true</bool>
-
     <!-- List of comma separated package names for which we the system will not show crash like
          tts, etc. dialogs. -->
     <string name="config_appsNotReportingCrashes">com.google.android.tts</string>   
@@ -400,5 +397,5 @@
         <item>NR_NSA_MMWAVE:2097152,6291456,16777216,512000,2097152,8388608</item>
         <item>NR_SA:2097152,6291456,16777216,512000,2097152,8388608</item>
         <item>NR_SA_MMWAVE:2097152,6291456,16777216,512000,2097152,8388608</item>
-    </string-array>    
+    </string-array>
 </resources>
