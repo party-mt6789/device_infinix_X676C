@@ -79,6 +79,9 @@ ro.vendor.fm.platform=mt6631_6635
 # FRP
 ro.frp.pst=/dev/block/by-name/frp
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Gatekeeper
 ro.hardware.gatekeeper=trustonic
 
