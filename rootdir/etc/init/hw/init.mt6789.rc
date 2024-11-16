@@ -106,10 +106,6 @@ on fs
     write /sys/kernel/tracing/trace_marker "E"
     write /proc/bootprof "INIT:Mount_END"
 
-on fs
-
-   mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
-
 on late-fs
     write /proc/bootprof "INIT:late-fs"
     wait_for_prop hwservicemanager.ready "true"
@@ -387,10 +383,6 @@ on post-fs-data
     #Fingerprint
     chmod 0666 /dev/goodix_fp
     chmod 0666 /dev/silead_fp
-    #qing.li ck7n p1 bring up start
-    chmod 0666 /sys/class/leds/lcd-backlight/brightness
-    chmod 0666 /sys/devices/platform/soc/14013000.dsi/lcm_hbm_state
-    #qing.li ck7n p1 bring up end
 
     #v4l2 codec
     chmod 0660 /dev/vcu
@@ -791,13 +783,6 @@ on boot
 	chown system system /sys/devices/platform/charger/tran_aichg_bigdata
 	chmod 0666 /sys/devices/platform/charger/tran_aichg_bigdata
     #BSP:add for charger&led midtest by lei.shi5 20220505 end
-    #MG-CHG(Bypass):wireless function by yongqing 20221008 start
-    chmod 0666 /sys/wireless/wireless/Rx/brushFW
-    chmod 0666 /sys/wireless/wireless/Rx/reverse_charger
-    chmod 0666 /sys/wireless/wireless/Rx/rxdetect
-    chmod 0666 /sys/wireless/wireless/Rx/fake_rx_detect
-    #MG-CHG(Bypass):wireless function by yongqing 20221008 start
-
 
     #MG-CHG(Bypass):bypass function by yongqing 20221008 start
     chown system system /sys/devices/platform/charger/tran_aichg_disable_charger
@@ -1039,40 +1024,6 @@ on property:sys.boot_completed=1
     # stop bootprof
     write /proc/bootprof 0
 
-#service dpfd /vendor/bin/dpfd
-#	user root
-#	group system media
-
-#
-#  External Modme control related services
-#
-
-#
-#  Modem related services (Begin)
-#
-##Add by T.Zh for ppp daemon
-#service pppd /system/bin/pppd file /data/misc/ppp/ppp_options
-#    user root
-#    disabled
-#    oneshot
-#
-##
-#
-#  Modem related services (End)
-#
-
-#add for power-off alarm
-#service poad /vendor/bin/poad
-#    class main
-#    user system
-#    group system
-#    oneshot
-
-#service BGW /vendor/xbin/BGW
-#	user system
-#	group gps system radio
-#	class main
-
 # Battery info
 on property:persist.vendor.mediatek.fg.disable=1
     write /dev/gauge/FG_daemon_disable 1
@@ -1124,26 +1075,6 @@ on property:persist.vendor.mediatek.fast_charging.support=*
 # FPSGO FBT Game
 on boot
     insmod /vendor/lib/modules/fpsgo.ko
-
-# VSIM service (vendor OSI)
-service osi /system/bin/osi
-    class main
-    user root
-    disabled
-    oneshot
-    #seclabel u:r:osi:s0
-
-#SPD: add resmonitor and smartpanel bind small core by rui.fu 20230117 start
-service spd_cpu_set_sh /vendor/bin/init.spd_cpu_set.sh
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
-
-on property:sys.boot_completed=1
-    start spd_cpu_set_sh
-#SPD: add resmonitor and smartpanel bind small core by rui.fu 20230117 end
 
 #SPD: add for watermark_scale_factor at 20230302 start
 on property:sys.boot_completed=1
