@@ -151,7 +151,7 @@ ro.vendor.mgk_name=mgk_64_entry_level_k510
 ro.vendor.mgvi_name=mgvi_64_nfc_armv82
 ro.vendor.mediatek.platform=MT6789
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1
-ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V15.102_reallytek.s0mp1rc.k61v1.64.bsp_P31
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V14.2.1_reallytek.s0mp1rc.k61v1.64.bsp_P152
 
 # Misc
 persist.vendor.kernel.version=5
@@ -318,6 +318,9 @@ ro.vendor.mtk_trustonic_tee_support=1
 
 # Thermal
 ro.vendor.mtk_thermal_2_0=1
+
+# Vibrator
+ro.vendor.tran.vibrator.option=single
 
 # WiFi
 ro.vendor.wifi.sap.concurrent.iface=ap1
