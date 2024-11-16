@@ -55,6 +55,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so|\
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so|\
         vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
@@ -110,10 +111,12 @@ function blob_fixup() {
         vendor/etc/init/init.thermal_core.rc)
             [ "$2" = "" ] && return 0
             sed -i 's|ro.vendor.mtk_thermal_2_0|vendor.thermal.link_ready|g' "${2}"
-           ;;
+            ;;
         vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml)
             sed -i 's/1.1/1.2/' "$2"
             ;;
+        vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so)
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
     esac
 }
 
