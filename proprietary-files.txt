@@ -867,8 +867,6 @@ vendor/lib/libmtkhardware_legacy.so
 vendor/lib/libpixelflinger.so
 vendor/lib/librgbwlightsensor.so
 vendor/lib/libSQLiteModule_VER_ALL.so
-vendor/lib/libvcodec_utility_plat.mt6789.so
-vendor/lib/libvcodec_utility_plat.mt6983.so
 vendor/lib/libvow_ap_test_aa.so
 vendor/lib/libvow_ap_test_dd.so
 vendor/lib/libvow_ap_test_ha.so
@@ -1663,9 +1661,6 @@ vendor/lib/mt6789/libvcodecdrv_v3a.so
 vendor/lib/mt6789/libvpudv3a_vcodec.so
 vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvcodec_oal.so
-vendor/lib/libvcodec_utility_plat.mt6789.so
-vendor/lib/libvcodec_utility_plat.mt6895.so
-vendor/lib/libvcodec_utility_plat.mt6983.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib64/libvpu.so
@@ -1893,7 +1888,6 @@ vendor/etc/init/bootperf.rc
 vendor/etc/init/init.fpsgo.rc
 vendor/lib/libpower_timer.so
 vendor/lib/libperfctl_vendor.so
-vendor/lib/vendor.mediatek.hardware.power@1.1.so
 vendor/lib/vendor.mediatek.hardware.power@2.0.so
 vendor/lib64/libpower_timer.so
 vendor/lib64/libperfctl_vendor.so
@@ -1903,7 +1897,6 @@ vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 # Pnpmgr 
 vendor/etc/init/init.pnpmgr.fpsgo.boost.gki.rc
 vendor/etc/init/init.pnpmgr_game_mode.gki.rc
-vendor/etc/init/init.pnpmgr.fre.gki.rc
 vendor/etc/init/init.pnpmgr_game_record.gki.rc
 vendor/etc/init/init.pnpmgr.gki.rc
 vendor/etc/pnpmgr.db
