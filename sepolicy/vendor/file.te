@@ -9,6 +9,7 @@ type vendor_megvii_data_file, file_type, data_file_type, mlstrustedobject;
 type storage_dbg_data_file, file_type, core_data_file_type, data_file_type;
 
 # Fingerprint
+type silead_fpd_data_file, data_file_type, file_type;
 type sysfs_fp_name_path, fs_type, sysfs_type;
 type vendor_gf_data_file, file_type, data_file_type;
 
@@ -22,9 +23,6 @@ type proc_gesture_state, fs_type, proc_type, sysfs_type;
 # OTG
 type sysfs_OTG_STATE_file, fs_type, sysfs_type;
 type sysfs_OTG_CTL_file, fs_type, sysfs_type;
-
-# Power
-type sysfs_aichg_file, fs_type, sysfs_type;
 
 # Torch
 type sysfs_sub_torch_file, fs_type, sysfs_type;

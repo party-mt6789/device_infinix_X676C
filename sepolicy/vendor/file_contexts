@@ -1,7 +1,3 @@
-# BatteryInfo
-/sys/devices/platform/soc/1101a000.i2c/i2c-6/6-006b/power_supply/charger(/.*)?          u:object_r:sysfs_batteryinfo:s0
-/sys/devices/platform/odm/odm:tran_auto_test/power_supply/tran-auto-test(/.*)?           u:object_r:sysfs_batteryinfo:s0
-
 # Camera
 /dev/cml421_ois(/.*)?                                                                   u:object_r:cml421_ois_device:s0
 /dev/cwvi5300                                                                           u:object_r:cwvi5300_device:s0
@@ -18,10 +14,16 @@
 /sys/devices/platform/extcon_usb/extcon/extcon0/cable.1/state                           u:object_r:sysfs_OTG_STATE_file:s0
 
 # Fingerprint
+/(vendor|system/vendor)/bin/hw/vendor\.silead\.hardware\.fingerprintext@1\.0-service            u:object_r:hal_fingerprint_default_exec:s0
 /(system\/vendor|vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service         u:object_r:hal_fingerprint_default_exec:s0
 /dev/fpsensor                                                                                   u:object_r:fpsensor_fp_device:s0
 /sys/kernel/tran_fp(/.*)?                                                                       u:object_r:sysfs_fp_name_path:s0
 /data/vendor/goodix/gf_data(/.*)?                                                               u:object_r:vendor_gf_data_file:s0
+/dev/spidev.*                                                                                   u:object_r:silead_fpd_device:s0
+/dev/silead_fp                                                                                  u:object_r:silead_fpd_device:s0
+/dev/silead_stub                                                                                u:object_r:silead_fpd_device:s0
+/persist/silead(/.*)?                                                                           u:object_r:silead_fpd_data_file:s0
+/data/(vendor|system)/silead(/.*)?                                                              u:object_r:silead_fpd_data_file:s0
 
 # Health
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.health@2\.1-service         u:object_r:hal_health_default_exec:s0
@@ -35,8 +37,7 @@
 /dev/nxpnfc                                                                                 u:object_r:nfc_device:s0
 
 # Power
-/sys/devices/platform/soc/11017000.i2c/i2c-5/5-0053/power_supply/charger(/.*)?              u:object_r:sysfs_batteryinfo:s0
-/sys/devices/platform/charger/tran_aichg_disable_charger                                    u:object_r:sysfs_aichg_file:s0
+/sys/devices/platform/soc/11017000.i2c/i2c-5/5-0053/power_supply/charger(/.*)?                     u:object_r:sysfs_batteryinfo:s0
 
 # Sensor stuff
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.sensors@[0-9]\.[0-9]-service(\.multihal)?  u:object_r:hal_sensors_default_exec:s0
@@ -62,5 +63,6 @@
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.vibrator@1\.0-service-mediatek-lazy       u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.vibrator-service\.example                 u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.vibrator-service\.mediatek                u:object_r:hal_vibrator_default_exec:s0
-/sys/devices/platform/soc/1101a000.i2c/i2c-6/6-0034/leds/vibrator_single(/.*)?               u:object_r:sysfs_vibrator:s0
 /sys/devices/platform/soc/1101a000.i2c/i2c-6/6-005a/leds/vibrator_single(/.*)?               u:object_r:sysfs_vibrator:s0
+/sys/devices/platform/odm/odm:vibrator@0/leds/vibrator_l(/.*)?                               u:object_r:sysfs_vibrator:s0
+/sys/class/leds/vibrator/gain                                                                u:object_r:sysfs_vibrator:s0
