@@ -1,4 +1,4 @@
-## x676c package version: X676C-H891ZAaAbAc-S-OP-240711V1039, unless stated otherwise
+## x676c package version: X676C-H891ZAaAbAc-S-OP-240912V1816, unless stated otherwise
 
 # AEE
 vendor/lib/libaedv.so
