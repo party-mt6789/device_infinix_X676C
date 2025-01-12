@@ -1779,22 +1779,9 @@ vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
 
 # Misc
-vendor/bin/hw/vendor.mediatek.hardware.tranHwInfo@1.0-service
-vendor/bin/fpsgo
-vendor/bin/gbe
-vendor/bin/md_monitor
-vendor/bin/meta_tst
-vendor/bin/mt6660_calibration
-vendor/bin/rt5512_calibration
-vendor/etc/init/fpsgo.rc
-vendor/etc/init/gbe.rc
 vendor/etc/init/init.otg.rc
-vendor/etc/init/md_monitor.rc
-vendor/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc
-vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml
 vendor/lib/libimsg_log.so
 vendor/lib64/libimsg_log.so
-vendor/lib64/vendor.mediatek.hardware.tranHwInfo@1.0.so
 
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
@@ -1884,8 +1871,6 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # Power
-vendor/etc/init/bootperf.rc
-vendor/etc/init/init.fpsgo.rc
 vendor/lib/libpower_timer.so
 vendor/lib/libperfctl_vendor.so
 vendor/lib/vendor.mediatek.hardware.power@2.0.so
@@ -1893,16 +1878,6 @@ vendor/lib64/libpower_timer.so
 vendor/lib64/libperfctl_vendor.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
-
-# Pnpmgr 
-vendor/etc/init/init.pnpmgr.fpsgo.boost.gki.rc
-vendor/etc/init/init.pnpmgr_game_mode.gki.rc
-vendor/etc/init/init.pnpmgr_game_record.gki.rc
-vendor/etc/init/init.pnpmgr.gki.rc
-vendor/etc/pnpmgr.db
-vendor/lib64/libpnpmgr.so
-vendor/lib/libpnpmgr.so
-vendor/bin/pnpmgr
 
 # Radio
 vendor/bin/hw/mtkfusionrild
@@ -2090,20 +2065,7 @@ vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
-# TNE
-vendor/bin/hw/vendor.tne@1.0-service
-vendor/etc/init/tnev.rc
--vendor/etc/vintf/manifest/manifest_tneengine.xml
-vendor/lib64/libtneclient.so
-vendor/lib64/libtnev.so
-vendor/lib64/vendor.transsion.hardware.tne.tneengine@1.0.so
-
 # Tranlog
-vendor/bin/tranlog
-vendor/bin/tranlogconfig
-vendor/etc/init/init.tranlog.rc
-vendor/etc/init/init.tranlogconfig.rc
-vendor/lib64/libminizip.so
 vendor/lib64/libtranlog.so
 vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so
 vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
