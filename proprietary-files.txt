@@ -1086,55 +1086,6 @@ vendor/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xm
 vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 
-# Camera | Data
-vendor/data/camera/model/M_Segment_DoubleLoss_V1.model
-vendor/data/camera/model/Transsion_Segment_Pre.mnn
-vendor/data/camera/model/animal_human_landmark.mnn
-vendor/data/camera/model/eyes_detect_model
-vendor/data/camera/model/facerecheck.bin
-vendor/data/camera/model/facerecheck.param
-vendor/data/camera/model/lightforgender_addindian_tf113_test5.tflite
-vendor/data/camera/model/lightforgender_addindian_tf113_test5_converted.mnn
-vendor/data/camera/model/lightforgenderandage_tf113_test4.tflite
-vendor/data/camera/model/lightforgenderandage_tf113_test4_converted.mnn
-vendor/data/camera/model/meghumaneffect/human_model_image
-vendor/data/camera/model/meghumaneffect/human_model_video
-vendor/data/camera/model/meghumaneffect/opencl_algo.cache
-vendor/data/camera/model/meghumaneffect/relight
-vendor/data/camera/model/megii_dualcam/cache_data
-vendor/data/camera/model/megii_dualcam/capture_cache
-vendor/data/camera/model/megii_dualcam/capture_model
-vendor/data/camera/model/megii_dualcam/capture_policy
-vendor/data/camera/model/megii_dualcam/dof_mecp.bin
-vendor/data/camera/model/megii_dualcam/for_mt6768_mt6785
-vendor/data/camera/model/megii_dualcam/preview_cache
-vendor/data/camera/model/megii_dualcam/preview_model
-vendor/data/camera/model/megii_dualcam/preview_policy
-vendor/data/camera/model/meishefilter/Paris06.mslut
-vendor/data/camera/model/meishefilter/abao.mslut
-vendor/data/camera/model/meishefilter/heijin01.mslut
-vendor/data/camera/model/meishefilter/heijin02.mslut
-vendor/data/camera/model/meishefilter/landiao.mslut
-vendor/data/camera/model/meishefilter/saibo.mslut
-vendor/data/camera/model/meishefilter/youhua.mslut
-vendor/data/camera/model/portrait_repair_composite_hardcode_lite_3.4.30.model
-vendor/data/camera/model/scene.tflite
-vendor/data/camera/model/segment.tflite
-vendor/data/camera/model/segmentPre.tflite
-vendor/data/camera/model/sr_params.xml
-vendor/data/camera/vidhance/vidhance_calibration
-vendor/data/camera/watermark/watermark_1280x720.nv21
-vendor/data/camera/watermark/watermark_1280x720.yuyv
-vendor/data/camera/watermark/watermark_1920x1080.nv21
-vendor/data/camera/watermark/watermark_1920x1080.yuyv
-vendor/data/camera/watermark/watermark_2560x1440.nv21
-vendor/data/camera/watermark/watermark_2560x1440.yuyv
-vendor/data/camera/watermark/watermark_3840x2160.nv21
-vendor/data/camera/watermark/watermark_3840x2160.yuyv
-vendor/data/camera/watermark/watermark_640x480.nv21
-vendor/data/camera/watermark/watermark_640x480.yuyv
-vendor/data/camera/watermark/watermark_config
-
 # Camera - Patched (RAW)
 vendor/lib64/mt6789/libmtkcam_metastore.so
 
@@ -1591,10 +1542,6 @@ vendor/lib64/mt6789/libDR.so
 vendor/lib64/mt6789/libmnl.so
 vendor/lib64/librpc.so
 vendor/lib64/libviagpsrpc.so
-
-# HotwordEnrollment - from fleur-user 13 TP1A.220624.014 V816.0.2.0.TKEINXM release-keys 
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80965c170f4885a7dd62c0eaad1a0c7840f
--system_ext/framework/com.android.hotwordenrollment.common.util.jar|7549028e83df9783ea5c7fbf78e5d904e2de0cf7
 
 # IMS - from plato-user 14 UP1A.230620.001 V14.0.7.0.ULQMIXM release-keys
 -system_ext/framework/mediatek-common.jar:framework/mediatek-common.jar|895c6819d00deb385675cc7b90f073d0b6fbd29d

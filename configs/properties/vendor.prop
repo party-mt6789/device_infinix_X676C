@@ -1,13 +1,6 @@
 # AAL
 ro.vendor.mtk_aal_support=1
 
-# APK Verity
-ro.apk_verity.mode=2
-
-# ART
-dalvik.vm.dex2oat-minidebuginfo=false
-dalvik.vm.minidebuginfo=false
-
 # Audio
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
@@ -73,15 +66,9 @@ vendor.connsys.driver.ready=no
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
 
-# Disable vsync for cpu rendered apps
-debug.cpurend.vsync=false
-
 # DRM
 drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l1_support=1
-
-# Fingerprint
-ro.hardware.fp.sideCap=true
 
 # FM
 ro.vendor.fm.platform=mt6631_6635
@@ -96,7 +83,6 @@ persist.sys.fuse.passthrough.enable=true
 ro.hardware.gatekeeper=trustonic
 
 # Graphics
-debug.cpurend.vsync=false
 debug.hwui.skia_atrace_enabled=false
 debug.mediatek.disp_decompress=1
 debug.renderengine.backend=skiagl
@@ -146,9 +132,6 @@ ro.lmk.use_minfree_levels=false
 ro.lmk.thrashing_limit_decay=50
 ro.lmk.downgrade_pressure=30
 
-# Logd
-ro.logd.kernel=false
-
 # Media
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
@@ -173,7 +156,6 @@ ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V14.2.1_reallytek.s0mp1rc.k
 persist.vendor.kernel.version=5
 persist.vendor.uxcompaction_enable=true
 ro.vendor.rc=/vendor/etc/init/hw/
-persist.vendor.factory.GB2312=no
 ro.limit_cache.support=1
 ro.vendor.efuse_writer_enable=1
 ro.vendor.mtk_gwsd_capability=1
@@ -196,11 +178,6 @@ vendor.boostfwk.aosp_fling=1
 vendor.boostfwk.aosp_move=1
 vendor.boostfwk.fling_distance_dp=20
 vendor.boostfwk.launcher_use_interaction=1
-
-# Pnpmgr
-persist.vendor.pnpmgr.enable=1
-persist.vendor.pnpmgr.gamemode.enable=1
-persist.vendor.pnpmgr.gamerecord.enable=1
 
 # Power
 ro.vendor.powerdata.support=1
